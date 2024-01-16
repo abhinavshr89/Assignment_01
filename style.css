@@ -416,9 +416,14 @@ html,body{
     grid-template-rows: auto auto; /* Adjust the number of rows as needed */
     grid-row-start: auto;
     grid-row-end: auto;
-    
-}
 
+   }
+   .prm-box{
+    padding: 20px;
+   }
+   .prm-box .img-box img{
+    height: 60px;
+   }
 .linkedIn,
 .Youtube {
     grid-column-start: 1;
@@ -452,6 +457,11 @@ html,body{
     font-size: 10px;
     
    }
+  
+   .socialContainer{
+    background-color: transparent;
+   }
+   
  
 }
 
