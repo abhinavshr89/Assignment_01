@@ -40,7 +40,6 @@ html,body{
     
 }
 .left-section{
-  
     border-radius: 20px;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -61,8 +60,6 @@ html,body{
 .left-section .avatar{
     width: 70%;
     height:25%;
-
-  
 }
 .left-section .avatar img{
     width: 100%;
@@ -80,7 +77,7 @@ html,body{
  
 }
 .lb img{
-    width: 17\%;
+    width: 15%;
     height: 60%;
      
 
@@ -201,8 +198,9 @@ html,body{
     background-color: #253644;
     font-size: 20px;
 }
+
 .WhatIdo{
-    border: 2px solid white ;
+ 
     grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 20px;
@@ -217,7 +215,64 @@ html,body{
     justify-content: space-around;
 
 }
+.testimonial{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.linkedIn{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.linkedIn h2{
+    align-self: flex-start;
+    margin-left: 20px;
+    color: white;
 
+}
+.Youtube{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.Youtube h4{
+    margin-top: 20px;
+    color: white;
+}
+.linkedIn img{
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+   
+}
+.Youtube iframe{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    bottom: 0px;
+    border-radius: 20px;
+
+
+}
 
 .wid-wrapper {
     width: 100%;
@@ -285,13 +340,18 @@ html,body{
 }
 .box-2 .img-box{
     padding: 0;
-
+    
 }
 .box-3 .img-box img{
-   height: 35%;
-   width: 80%;
-   margin-left: 3px;
+    height: 35%;
+    width: 80%;
+    margin-left: 3px;
 }
+
+/* ----------------Testimonial----------- */
+
+
+/* -------------------------- */
 @media (max-width:1024px) {
     .main{
         height: auto;
@@ -303,7 +363,7 @@ html,body{
     .left-section{
         width: 100%;
         height: 300px;
-        border: 2px solid red;
+      
         position: static;
     }
     .right-section{
@@ -321,16 +381,14 @@ html,body{
         
     }
 
-
 }
-
 @media (max-width: 600px) {
     .WhatIdo{
         position: relative;
         height: auto;
     }
     .wid-wrapper {
-        border: 2px solid red;
+     
         margin-bottom: 150px;
         grid-template-columns: 1fr; /* Change to a single column */
         grid-template-rows: repeat(4, 1fr); /* Create 4 rows */
@@ -345,7 +403,7 @@ html,body{
    }
    .avatar{
       padding: 0px 30px ; 
-      border: 2px solid green;
+    
    }
    .left-section h4{
     font-size: 12px;
@@ -353,15 +411,35 @@ html,body{
   .left-section h4{
     font-size: 10px;
    }
+   .testimonial {
+    grid-template-columns: 1fr; /* Change to a single column */
+    grid-template-rows: auto auto; /* Adjust the number of rows as needed */
+    grid-row-start: auto;
+    grid-row-end: auto;
+    
 }
 
+.linkedIn,
+.Youtube {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%; /* Make each element take full width */
+}
+
+.Youtube {
+    margin-top: 20px; /* Add margin to separate LinkedIn and YouTube */
+}
+
+
+
+}
 @media (max-width:450px) {
     .left-section{
-        height: 80vh;
+        height: 70vh;
         padding: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start
+        justify-content: flex-start;
         
     }
     .avatar{
@@ -372,7 +450,8 @@ html,body{
    }
    .left-section p{
     font-size: 10px;
+    
    }
+ 
 }
 
-}
